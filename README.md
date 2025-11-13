@@ -55,6 +55,12 @@
 
       </details>
 
+- [**Window Appearance**](https://github.com/KevinSilvester/wezterm-config/blob/master/config/appearance.lua)
+  
+  - Symmetric window padding (20px on all sides)
+  - Focus mode enabled by default (no background images)
+  - Tab bar hidden when only one tab is open
+
 ---
 
 ### Getting Started
@@ -208,6 +214,8 @@
 
   - [./config/domains.lua](./config/domains.lua) for custom SSH/WSL domains
   - [./config/launch.lua](./config/launch.lua) for preferred shells and its paths
+  
+  > Note: Default shell is now Zsh for both Mac and Linux platforms (previously Fish).
 
 ---
 
@@ -249,6 +257,8 @@ Most of the key bindings revolve around a <kbd>SUPER</kbd> and <kbd>SUPER_REV</k
 | --------------------------------------------- | -------------------- |
 | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>c</kbd> | Copy to Clipboard    |
 | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>v</kbd> | Paste from Clipboard |
+| <kbd>Super</kbd>+<kbd>c</kbd>                 | Copy to Clipboard (Mac) |
+| <kbd>Super</kbd>+<kbd>v</kbd>                 | Paste from Clipboard (Mac) |
 
 &nbsp;
 
@@ -287,6 +297,8 @@ Most of the key bindings revolve around a <kbd>SUPER</kbd> and <kbd>SUPER_REV</k
 | ----------------------------- | -------------- |
 | <kbd>SUPER</kbd>+<kbd>9</kbd> | Toggle tab bar |
 
+> Note: Tab bar is hidden by default when only one tab is open.
+
 ##### Tabs: Title
 
 | Keys                              | Action             |
@@ -303,6 +315,8 @@ Most of the key bindings revolve around a <kbd>SUPER</kbd> and <kbd>SUPER_REV</k
 | <kbd>SUPER</kbd>+<kbd>n</kbd> | `SpawnWindow`        |
 | <kbd>SUPER</kbd>+<kbd>=</kbd> | Increase Window Size |
 | <kbd>SUPER</kbd>+<kbd>-</kbd> | Decrease Window Size |
+
+> Note: Windows are no longer maximized automatically on startup.
 
 &nbsp;
 
@@ -352,6 +366,8 @@ Most of the key bindings revolve around a <kbd>SUPER</kbd> and <kbd>SUPER_REV</k
 | <kbd>SUPER</kbd>+<kbd>.</kbd>     | Cycle to previous Image      |
 | <kbd>SUPER_REV</kbd>+<kbd>/</kbd> | Fuzzy select Image           |
 | <kbd>SUPER</kbd>+<kbd>b</kbd>     | Toggle background focus mode |
+
+> Note: Focus mode (no background images) is enabled by default on startup.
 
 &nbsp;
 

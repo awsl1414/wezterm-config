@@ -220,6 +220,18 @@ local keys = {
 }
 
 -- stylua: ignore
+local mac_keys = {
+   -- copy/paste --
+   { key = 'c',          mods = mod.SUPER,  action = act.CopyTo('Clipboard') },
+   { key = 'v',          mods = mod.SUPER,  action = act.PasteFrom('Clipboard') },
+}
+
+-- add mac_keys to keys if platform is mac
+if platform.is_mac then
+   for _, v in ipairs(mac_keys) do table.insert(keys, v) end
+end
+
+-- stylua: ignore
 local key_tables = {
    resize_font = {
       { key = 'k',      action = act.IncreaseFontSize },
